@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f47cc2b846.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/Name.jpeg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm<br> <span>Satyam</span> Srivastava</h1>
+            </div>
+        </div>
+    </div>
+<!--------about-------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/Podium image.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Dynamic and motivated individual with a strong background in computer science, cybersecurity and leadership. Possesses expertise in collaborative web development, Data structures and Algorithms, project management, and community health initiatives.Demonstrates exceptional adaptability, quick learning, and the ability to thrive in team-oriented environments. Eager to apply adiverse skill set to drive success in a dynamic and challenging setting.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Creating and Designing websites</li>
+                            <li><span>Programming languages</span><br>Skilled in C++/JAVA Programming</li>
+                            <li><span>Cybersecurity</span><br>Well versed with the concepts of cybersecurity and networking</li>
+                            <li><span>Core Subjects</span><br>Informed about key concepts such as Object Oriented Programming and Methodology, Operating systems, Database Management Systems, etc.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Bharat Billion Impact Challenge (BBIC) — Co-founder (Plugged)</span><br>Designed and helped develop Plugged, an innovative platform for the gaming industry. Earned the opportunity to pitch the concept at the 13th Entrepreneurship Summit, hosted by Young Indians (YI). Strategically designed business and revenue models to tap into the $200B+ global gaming market.</li>
+                            <li><span> The Cybersecurity Club — Team Lead
+                            </span><br>Directed and oversaw the club's activities. Mentored a team of over 10 students. Collaborated with faculty members and
+                            industry professionals to guide students and connect academic knowledge with practical, real-world experiences.</li>
+                            <li><span>CII Young Indians YUVA (Jan 2024-Dec 2024) — Health Chair</span><br>YI Health- A CII Young Indians initiative that aims at aiding the growth of mental and physical health of Indian citizens. Some of the initiatives include educating the public about proper sanitary practices, hygiene, mental and physical health, Drug Abuse, etc. and collaborating with Government, NGOs, and corporations to achieve maximum outreach.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.tech</span><br>RGPV- Computer Science Engineering with specialization in Cybersecurity (Nov 2022-Present)</li>
+                            <li><span>Higher Secondary</span><br>St. Paul Sr. Sec. Co-Ed School (Apr 2021-Apr 2022)</li>
+                            <li><span>Secondary</span><br>St. Paul Sr. Sec. Co-Ed School (Apr 2019-Apr 2020)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-----------------services-------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-sheet-plastic"></i>
+                <h2>Web Design</h2>
+                <p>Experienced in Web designing and development with HTML, CSS, and Javascript, with a firm foundation in MERN stack.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Programming</h2>
+                <p>Well versed with object-oriented programming in C++/JAVA and knowledgeable about data structures and algorithms.</p>          
+            </div>
+            <div>
+                <i class="fa-solid fa-shield-halved"></i>
+                <h2>Cybersecurity</h2>
+                <p>Having a strong understanding of the cybersecurity fundamentals and essentials, and cybersecurity analysis.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------portfolio----->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/Netflix logo.jpeg">
+                <div class="layer">
+                    <h3>Netflix Clone</h3>
+                    <p>A lookalike of the Netflix login interface using HTML and CSS.</p>
+                    <a href="https://github.com/satyamsrivastava1207/Netflix-Clone-Login-page-"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/ppw.jpeg">
+                <div class="layer">
+                    <h3>Personal Portfolio Website</h3>
+                    <p>An intuitive website displaying the skillset and experience of an individual, designed using HTML, CSS and Javascript.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/Plugged bg.jpeg">
+                <div class="layer">
+                    <h3>Plugged</h3>
+                    <p>The UI/UX of a community building and tournament hosting platform named 'Plugged', designed for the $200B+ global gaming and esports industry.</p>
+                    <a href="https://framer.com/projects/Plugged--3PsCdS5yzUOFMo4uLRWJ-6wMWg"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!-------------contact------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-solid fa-envelope"></i> satyamsrivastava1207@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +91 9770307609</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/satyam-srivastava-821714273/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/satyam._1207/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="SATYAM SRIVASTAVA RESUME.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &#169; 2025 Satyam.</p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px"
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz44_MEWs9cj4QDRO21i4Jx6xJ1bx3HC46_Uol0ew4fL-XrAntQkm-rox56Q6OovGE0/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
